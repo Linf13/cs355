@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #cee;
+    --txt-color: #333; 
+    --bg-color2: #abb
+}
+
+:root[theme='dark'] {
+    --bg-color: #333;
+    --txt-color: #eee;
+    --bg-color2: #abbb;
+}
+
+body{
+    background-color: var(--bg-color);
+    color:  var(--txt-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+div{
+    background-color: var(--bg-color2);
+    color: var(--txt-color);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+toggle{
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    
+}
+
+toggle:hover{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    border: 1px solid var(--txt-color);
+    cursor: pointer;
+}
